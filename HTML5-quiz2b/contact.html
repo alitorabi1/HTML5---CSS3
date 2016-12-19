@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> 
+<html>
+   <head>
+      <title>Contact</title>
+   </head>
+   <body>
+
+	<p><a href="main.html"><img src="images/logo.jpg" alt="Logo" width="200"></a></p>
+	<ul>
+		<li><a href="main.html">Main</a></li>
+		<li><a href="contact.html">Content</a></li>
+		<li><a href="products.html">Products</a></li>
+	</ul>
+
+	<h1>Contact us</h1>
+
+	<p>Please contact us right bellow!</p>
+
+	<form method="post" action="http://server.prokopski.com/html/receive.php">
+		<label for="name">Name</label><input type="text" id="title" name="title"><br><br>
+		<label for="reason">Reason to contact</label><select name="reason"><br>
+			  <option value="Feedback">Feedback</option>
+			  <option value="Inquiry">Inquiry</option>
+			  <option value="Other">Other</option>
+			</select><br><br>
+		<label for="department">Department</label><br>
+			<input type="radio" name="department" id="Production" value="Production">
+			<label for="morning">Production</label><br>
+			<input type="radio" name="department" id="Marketing" value="Marketing">
+			<label for="evening">Marketing</label><br>
+			<input type="radio" name="department" id="PublicRelations" value="PublicRelations">
+			<label for="weekend">Public Relations</label><br><br>
+		<label for="message">Message</label><textarea name="message"></textarea><br>
+
+		<input type="submit" value="Create">
+	</form>
+
+	<hr>
+
+	<center>
+	<small>&copy; 2016 by TheCompany</small>
+	</center>
+	
+	</body>
+</html>
+

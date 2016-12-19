@@ -1,0 +1,85 @@
+@charset "utf-8";
+/*  CSS Document for the fixed layout web page
+	Developed by: Ali Torabi
+	Script Date: April 5, 2016
+*/
+
+/* styling the body selector */
+body{
+	margin: 0;
+	font-family: verdana, geneva, sans-serif;
+}
+
+#wrapper{
+	width: 80%;
+	margin: 0 auto;
+	background:url("../images/bg-league.jpg") repeat;
+	height:600px;
+	background-color:#999;
+	border:1px solid #444;
+}
+
+header{
+	display:block;
+	width:100%;
+	float:left;
+	background:#122;
+	margin-bottom:20px;
+}
+
+h1{
+	font-size:2em;
+	margin:40px 0 30px;
+	border-bottom: 1px;
+	padding:10px 0;
+	color:#fff;
+	text-transform:uppercase;
+	text-align:center;
+	text-shadow:20px 12px 29px #4cff00;
+}
+
+#container{
+	width: 100%;
+	float:left;
+}
+
+ol{
+	font-family: arial, helvetica, sans serif;
+	font-size:1em;
+	background:#333;
+	color:#fff;
+	width:250px;
+	margin:0 auto;
+}
+
+ol li{
+	background:#666;
+	border-bottom:1px dashed #999;
+	padding:10px;
+}
+ol li a:link{
+	color:#fff;
+	text-decoration:none;
+}
+ol li a:hover{
+	color:#f00;
+}
+ol li a:visited{
+	color:#000;
+}
+
+/* ----------------------------------------------------------
+	The league has 10 teams.
+	The top 1 and 2 are promotional places,
+	The 3 to 6 are play-off places,
+	and 9 and 10 are religation spots.
+*/
+ol li:nth-child(-n+2){
+	background:green;
+}
+ol li:nth-child(n+3):nth-child(-n+6){
+	background:blue;
+}
+ol li:nth-child(n+9):nth-child(-n+10){
+	background:red;
+}

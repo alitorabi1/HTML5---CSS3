@@ -1,0 +1,167 @@
+@charset "utf-8";
+/*  CSS Document for the fixed layout web page
+	Developed by: Ali Torabi
+	Script Date: April 5, 2016
+*/
+
+/* styling the body selector */
+body{
+	font-family: verdana, geneva, sans-serif;
+	font-size: 12px;
+}
+
+div{
+	width: 15em;
+	height: 1em;
+	display: inline-block;
+	margin: 0.5em;
+	border: 2px solid #2e8b57;
+	padding: 0.5em;
+	background-color:rgb(155, 187, 89);
+	text-align: center;
+}
+
+.colors{
+	position: relative;
+	width: 17em;
+	height: 17em;
+}
+
+.colors> div { /* the symbol > means, do for the first level of all the divs in the colors class*/
+	position: absolute;
+	display: inline-block;
+	border-radius: 50%;
+	border: none;
+	width: 10em;
+	height: 10em;
+}
+
+.rgbared{
+	top:0;
+	left:2.5em;
+	text-align:center;
+	background-color:rgba(255, 0, 0, 0.5);
+	/*z-index:3;*/
+}
+
+.rgbagreen{
+	top:5em;
+	left:5em;
+	background-color:rgba(0, 255, 0, 0.5);
+}
+
+.rgbablue{
+	top:5em;
+	left:0;
+	background-color:rgba(0, 0, 255, 0.5);
+}
+
+.roundCorner1{
+	border-radius:4px;
+}
+
+.roundCorner2{
+	border-radius:3px 12px;
+}
+
+.roundCorner3{
+	border-radius:0 8px 12px 16px;
+}
+
+.roundCorner4{
+	border-radius:4px 8px 12px 16px;
+}
+
+.ellipse{
+	border-radius:50%;
+}
+
+.theTransition{
+	height:20em;
+}
+
+.transition1 {
+	transition:all 1s ease;
+}
+
+.transition1:hover {
+	width:20em;
+	height:20em;
+}
+
+.theTransform> div{
+	width:5em;
+	height:5em;
+	transition:all 1s ease;
+}
+
+.transform1:hover{
+	transform:translate(10px, -10px);
+}
+.transform2:hover{
+	transform:rotate(-180deg);
+}
+.transform3:hover{
+	transform:scale(2, -0.5);
+}
+.transform4:hover{
+	transform:skew(45deg, 10deg);
+}
+.transform5:hover{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}
+.transform6:hover{
+     transform: rotateX(150deg);
+}
+.transform7:hover{
+     transform: rotatey(150deg);
+}
+.transform8:hover{
+     transform: rotatez(150deg);
+}
+
+/* 
+	background-origin 
+	• padding-box: default value. The background image starts
+		from the upper left corner of the padding edge.
+	• border-box: default value. The background image starts
+		from the upper left corner of the border edge.
+	• content-box: default value. The background image starts
+		from the upper left corner of the content edge.
+*/
+.theBackground div {
+	width:160px;
+	height:160px;
+	background-image:url("../images/bg-middle.png");
+}
+
+.theBackground > .background1 {
+	background-size:100% 100%; /*image will be fits in the area*/
+}
+.theBackground > .background2 {
+	background:url("../images/bg-front.png"),
+				url("../images/bg-middle.png"),
+				url("../images/bg-back.png");
+	background-size:100% 100%;
+}
+.theBackground > .background3 {
+	background:url("../images/bg-back.png");
+	background-origin:content-box;
+	background-size:100% 100%;
+	border:10px groove #000080;
+	padding:1em;
+}
+.theBackground > .background4 {
+	background:url("../images/bg-back.png");
+	background-origin:padding-box;
+	background-size:100% 100%;
+	border:10px groove #000080;
+	padding:1em;
+}
+.theBackground > .background5 {
+	background:url("../images/bg-back.png");
+	background-origin:border-box;
+	background-size:100% 100%;
+	border:10px groove #000080;
+	padding:1em;
+}

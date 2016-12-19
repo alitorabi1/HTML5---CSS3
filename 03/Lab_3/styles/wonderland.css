@@ -1,0 +1,108 @@
+@charset "utf-8";
+/*  CSS Document for the fixed layout web page
+	Developed by: Ali Torabi
+	Script Date: April 4, 2016
+*/
+
+/* styling the body selector */
+body{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+	color: #000;
+}
+
+/* styling the docTitle class */
+.docTitle {
+	font-size: 2em;
+	color: #00f;
+	background-color: #fff;
+	word-spacing: 10px;
+}
+
+/* styling the author class */
+.author {
+	letter-spacing: 10px;
+	border-bottom: 1px solid #00f;
+	padding-bottom: 12px;
+}
+
+/* styling the chapterNumber dependent class */
+h2.chapterNumber {
+	color: #f00;
+	background-color: #ccc;
+	display: inline; /*just for cover the text*/
+}
+
+/* styling the chapterTitle dependent class */
+h1.chapterTitle {
+	color: #f0f;
+}
+
+/* styling the introduction dependent class */
+p.introduction::first-line {
+	text-transform: uppercase;
+	color: #f00;
+}
+
+/* styling the firstLetter dependent class */
+p.firstLetter::first-letter{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #00f;
+	background-color: #ff0;
+	border: 2px solid #000080;
+	padding-bottom: 2px;
+}
+
+/* create the generic classes */
+.leftAlign{
+	text-align: left;
+}
+.rightAlign{
+	text-align: right;
+}
+.centerAlign{
+	text-align: center;
+}
+.floatLeft{
+	float: left;
+}
+.floatRight{
+	float: right;
+}
+.clearFloat{
+	clear: both;
+}
+
+/* Styling the nav selector*/
+nav{
+	background-color: #000;
+	line-height: 200%;
+	display: block;
+}
+nav ul li a {
+	color: #fff;
+	font-weight: bold;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+nav ul li a:link {
+	color: #00f;
+	text-decoration: none;
+}
+nav ul li a:visited {
+	color: #ff3e00;
+	text-decoration: none;
+}
+nav ul li a:active {
+	color: #00f;
+	background-color: #ff0;
+	text-decoration: underline;
+}
+nav ul li a:hover {
+	color: #ff0;
+	background-color: #00f;
+	text-decoration: underline;
+}

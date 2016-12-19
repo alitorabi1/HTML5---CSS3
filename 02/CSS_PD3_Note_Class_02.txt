@@ -1,0 +1,184 @@
+8:25 AM 10/23/2015
+==================
+Cascading Style Sheets categories
+
+Using Margins and Padding properties
+(Margin - Border -Padding)
+
+The abbr TRBL (Top, Right, Bottom, Left)
+margin-top: value
+margin-right:
+margin-bottom:
+margin-left:
+
+Padding
+padding-top: value
+padding-right:
+padding-bottom:
+padding-left:
+
+p.box {
+  padding:1em;
+}
+
+h1.box2 {
+  padding: 2em 3em;
+}
+first value applies to top and bottom, second value - right and left
+
+h2.box3 {
+   margin: 1em 2em 3em
+}
+
+first value - top, second value - right and left, and third value - bottom
+
+h3.box4 {
+   margin: 1em 2em 3em 4em;
+}
+
+Unit of measurements (absolute, relative, and percentage):
+=================
+em - (width of a capital letter M) - relative
+ex - (height of lowercase x) - relative
+px - (picture elements - pixel) - relative
+pt -  (point) - absolute
+mm - millimiters - absolute
+cm - centimeters - absolute
+in - inch - absolute 
+% - percentage of browser's display width
+
+Using the border property
+===================
+selector {
+   border:border-width border-style border-color
+}
+
+where 
+border-width can be measured with any unit of measurments
+border-style: solid, double, dotted, dashed, groove , ridge, inset, outset, none
+
+border-top-style
+border-right-style
+border-bottom-style
+border-left-style
+
+border-top-width
+same as previous declaration
+border-top-color
+
+Using float property:
+• float: left (the image, div, or any other element, is displayed at the left edge of the browser window, with the text wrapping to the right edge of the browser.)
+• float:right the image, div, or any other element, is displayed at the righr edge of the browser window, with the text wrapping to the left edge of the browser.)
+
+To clear the floatting property, we use the clear property:
+clear:left | right | both
+clear:left - text begins below an element floated left
+clear:right - text begins below an element floated right
+clear:both - text begins below an element floated left or right
+
+using the list-style-type property
+=======================
+for unordered list
+* disk (default value)
+* circle (a hollow circle)
+* square 
+
+for ordered list
+* decimal (default Arabic numbers: 1, 2, 3, ...)
+* lower-roman (i,ii, iii,...)
+* upper-roman (I, II, III, ...)
+* lower-alpha (a, b,c, ...)
+* upper-alpha (A, B, C, ...)
+
+to replace unordered style with an image style
+list-style-image: url("url")
+
+list-style-position: inside | outside (default)
+
+setting the background-color and foreground-color:
+color: color_value | rgb() | hexadecimal
+color: red | color:rgb(255, 0, 0) | color:#F00
+
+background properties
+================
+background-color: value
+background-image: url("url")
+background-position: horizontal_position vertical_position
+background-attachment: fixed | scroll
+background-repeat: no-repeat | repeat-x | repeat-y | repeat (default)
+
+overflow: visible (default) | hidden | scroll | auto
+
+===================================
+Selector Types:
+1. Universal selector	
+* { style declaration }
+
+2. Class selectors: dependent and independent
+.class_name { style declaration }
+
+3. ID selectors dependent and independent
+#id_name { style declaration }
+
+Grouping selectors
+
+selector1, selector2, ... { style declaration }
+
+Descendant combinators
+
+selector child_selector { style declaration }
+
+Child combinators
+
+selector > child_selector 
+
+
+Sibling Combinators
+selector + class_name { style declaration }
+
+
+Attribute Selectors
+
+selector[id="value"] { style declaration }
+
+
+
+<input type=""
+
+input [type="text"] { style declaration }
+
+input [type="email"] { style declaration }
+
+<a href="" title=""
+selector[attribute] { style declaration }
+a[title] { style declaration }
+
+Pseudo-classes
+==============
+a:link { style declaration }
+a:visited { style declaration }
+a:hover { style declaration }
+a:active { style declaration }
+a:focus { style declaration }
+
+a:visited:active { style declaration }
+
+
+nth-child selector 
+
+P:nth-child(2) { style declaration }
+
+
+Pseudo-Elements
+===============
+selector::first-line { style declaration }
+selector::first-letter { style declaration }
+
+
+!important
+
+
+
+
+
+

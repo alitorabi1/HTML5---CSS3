@@ -1,0 +1,111 @@
+
+Adding CSS to a Page
+====================
+As you saw in the HTML template, the <head> is the place where you add metadata and reference the resources on which the page relies.
+
+In the <head> section of index.html, reference the stylesheet you just created as follows:
+<head>
+<meta charset="utf-8" />
+<title>Cool Shoes &amp; Socks</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+
+</head>
+
+
+Here, you add a link for which the relationship (rel) to this page is a stylesheet. The hypertext reference (href) points to the place where that stylesheet is located within your project files and is of type text/css. This stylesheet will be utilized across all media types. More on media types shortly. Note that when a page is using the HTML5 doctype <!DOCTYPE html>, specifying the type is optional.
+
+Often, you require multiple stylesheets per page. To do this, you can simply add another <link>:
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+
+<link rel="stylesheet" href="css/styles2.css" type="text/css" media="all" />
+
+
+Alternatively, within a stylesheet, you can use the @import rule, which is a reference from one stylesheet to another and can be added anywhere within a stylesheet:
+
+@import url("styles2.css");
+@import url("styles3.css");
+
+Which approach is better? <link> performs better over @import (you can find out more about the performance impact of @import at: www.stevesouders.com/blog/2009/04/09/dont-use-import/) but on a live web page (on the web and viewable by everyone), neither approach is best!
+
+When you’re creating a web page, separating styles into multiple sheets is a good idea to make managing styles easier. However, when a site is live, ideally, you should have only one stylesheet. This is best practice, making a web page more efficient. 
+
+Whether you choose to use multiple <link> references within the HTML or use @import in your main stylesheet is entirely your choice. Just remember for good practice, you should merge all stylesheets into one when it’s time for a web page to go live. 
+
+
+Using Media Types
+=================
+You can apply a stylesheet to specific media types, such as screen, print, and handheld. Note that if a media attribute isn’t specified, a browser treats that referenced stylesheet as applying to all media types, like so:
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+This is a safe (it works in all browsers) and slightly quicker way of referencing a stylesheet. 
+
+What about multiple stylesheets for different media types? No problem. Assume styles.css is the main CSS file applied to all media types, but you decide you want to add an extra stylesheet that is only applied when you print the web page. You can do that like so:
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+<link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+
+Here, the first <link> references a stylesheet to be applied to all media types (because you haven’t specified a media type). However, the second <link> references a stylesheet specifically for print. The main stylesheet still applies to all media types (including print), but theadditional print stylesheet applies only to the print media type.
+
+Sometimes styles within the print stylesheet can override the ones in the main stylesheet. Most of the time this will be intentional, but sometimes you get conflicts. 
+
+
+Much like using the @import rule for adding additional stylesheets into another stylesheet, you can also use the @media rule for defining styles for specific media types within a stylesheet.
+
+Assume you have just one main stylesheet, like the following:
+
+<link rel="stylesheet" href="css/styles.css" type="text/css" />
+
+Rather than adding another <link> to reference a print stylesheet, within styles.css, you can add the following with the main stylesheet:
+
+@media print{
+/*print styles here*/
+}
+
+Any styles within this @media rule are applied only to printed web pages. Anything outside this rule is applied to all media types.
+
+You may find using media rules more desirable because it means referencing only one stylesheet, which is more efficient.
+
+
+User Agent Stylesheets
+=======================
+Before you begin applying styles to a page, it’s important to understand that browsers apply their own default stylesheet to every web page—often referred to as a user agent stylesheet. User agent stylesheets add default styles to HTML elements. These styles make an HTML page without any custom CSS applied to it instantly readable. When creating a web page using these stylesheets, you don’t have to apply all the default CSS styles as defined by the CSS specification to elements yourself.
+
+
+
+Using a CSS Reset for Better Browser Consistency 
+=================================================
+A CSS Reset is a set of styles that overwrite user agent styles, making the default styles as consistent as possible across all browsers. Eric Meyer (www.meyerweb.com/eric/), an industry leader, has worked on improving this technique over many years, producing a small set of styles that make writing CSS much easier from the start.
+
+By using a CSS Reset, you must add a few default styles back into your own CSS, because they are almost certainly required, but that is a small task when you consider how much easier it is to begin with consistent styles across all browsers.
+
+To add a CSS Reset to the web page, follow these steps:
+1. Copy and paste Eric Meyer’s CSS Reset from www.meyerweb.com/eric/tools/css/reset/.
+2. Create a new file and name it reset.css.
+3. Paste the CSS Reset into reset.css.
+4. Save reset.css into your css folder (which should already contain styles.css).
+5. In styles.css, add the following: @import url("reset.css");
+6. Save styles.css.
+
+You’ve now added an additional stylesheet and imported it into the main stylesheet. Remember, using multiple stylesheets when you create your web page makes for a more efficient workflow, but before you make a website live, it’s good practice to add all stylesheets into one. If you’d like to do that now, simply paste Eric Meyer’s CSS Reset into the top of styles.css instead of a new file.
+
+After you add a CSS Reset, compare the web page in Chrome and Internet Explorer again. They’re much more consistent now, right? The blue border has been removed from the logo in Internet Explorer and the spacing between elements is almost exactly the same.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+References:
+===========
+CSS3 Foundations | Ian Lunn | 978-1-118-35654-8 © 2013 | Published by John Wiley & Sons Ltd.

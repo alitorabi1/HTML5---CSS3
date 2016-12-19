@@ -1,0 +1,14 @@
+@charser "utf-8";
+/*********************** Media Query Document***********************/
+
+/* Default Style */
+@import url("base.css");
+
+/* Phone Devices */
+@import url("phone.css") only screen and (max-width:400px);
+
+/* tablet Devices */
+@import url("tablet.css") only screen and (min-width:401px) and (max-width:768px);
+
+/* Desktop Devices */
+@import url("desktop.css") only screen and (min-width:769px);

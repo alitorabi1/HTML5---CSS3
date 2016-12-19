@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Log in</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="styles/mediaquery.css">
+</head>
+<body>
+  <div id="wrapper">
+
+ 	<div id="headerContainer">
+		<header id="header">
+			<div id="logo">
+				<img alt="Logo" src="images/logo.jpg" width="700" height="100" />
+			</div>
+			<div id="language">
+				<ul>
+					<li class="lang"><a href="">EN /</a></li>
+					<li class="lang"><a href="">FR</a></li>	
+				</ul>
+			</div>
+			<nav id="topNav">
+				<a href="index.html">Home</a>
+				<a href="about.html">About us</a>
+				<a href="contact.html">Contact us</a>
+				<a href="login.html">Log in</a>
+			</nav>
+		</header>	
+	</div>
+	
+
+	<div id="mainContainer">
+		
+		<section class="form">
+			<form id="login"  action="" method="post">
+				 <fieldset>  
+				 	<p>I have my account</p> 					   				
+    				<input type="e-mail" class="e-mail" name="e-mail" placeholder="E-mail" required="reqired"><br>    			
+       				<input type="password" class="password" name="password" placeholder="Password" required="reqired"><br>
+   					<input type="submit" id="submitButton" value="Log in">
+  				</fieldset>
+			</form>
+		</section>
+		<section class="form" >
+			<form id="createAccount"  action="" method="post">
+				<fieldset>
+					<p>I do not have an account</p>
+					<input type="e-mail" class="e-mail" name="e-mail" placeholder="Enter your E-mail" required="reqired"><br>    			
+       				<input type="password" class="password" name="password" placeholder="Set a Password" required="reqired"><br>
+       				<input type="password" class="confirm" name="confirm" placeholder="Confirm your Password" required="reqired"><br>
+   					<input type="submit" id="createAccountButton" value="Create account">
+				</fieldset>
+			</form>
+		</section>
+		</div>	
+	</div>
+
+
+
+	<footer id="footer">
+		<div id="copyright">
+			<p>Copyright &copy; 2016 ADM Cycles Corporation</p>
+		</div>
+	</footer>
+  </div>
+
+</body>
+</html>

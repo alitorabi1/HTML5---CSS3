@@ -1,0 +1,7 @@
+@charser "utf-8";
+
+/* Desktop Devices */
+#container{
+	background-image:url("../images/nature.jpg");
+	background-size: 980px 160px;
+}

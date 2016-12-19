@@ -1,0 +1,69 @@
+/*  CSS Document for the fixed layout web page
+	Developed by: Ali Torabi
+	Script Date: April 1, 2016
+*/
+@charset "utf-8";
+
+body{
+	font-family: Arial, Helvatica, sans-serif;
+	font-size:14px;
+	margin-top: 0;
+}
+
+#container{
+	width: 930px;
+	margin: 0 auto;
+	background-image: url("../images/Parchment.gif");
+	background-repeat;
+}
+/* remember the order of selectors: width, margin, border, padding(TRBL) */
+
+/* styling the header id selector */
+#header{
+	color: #fff;
+	width: 910px;
+	margin: 0 0 10px 0;
+	height: 50px;
+}
+h2{
+	width: 875px;
+	background-color: #008080;
+	padding: 3px;
+	margin: auto;
+	border: 10px solid #252484;
+}
+/* styling the footer id selector */
+#footer{
+	color: #fff;
+	width: 868px;
+	background-color: #008080;
+	padding: 3px;
+	margin: auto;
+	border: 10px solid #252484;
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: capitalize;
+	word-spacing: 20px;
+}
+#pans{
+	float: right;
+	border: 4px solid #000080;
+}
+#frying{
+	float: left;
+	border: 4px solid #000000;
+	margin-left: 20px;
+}
+#pot{
+	float: right;
+	border: 4px solid #008000;
+}
+.newline{
+	clear: both;
+}
+h3{
+	font-size: 18px;
+	font-weight: bold;
+/*	margin-left: 20px;*/
+}

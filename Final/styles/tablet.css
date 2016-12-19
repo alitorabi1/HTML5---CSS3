@@ -1,0 +1,30 @@
+@charser "utf-8";
+
+/* Tablet Devices */
+#container{
+	width:100%;
+	background-image:url("../images/nature-tablet.jpg");
+	/*background-size:contain;*/
+	background-size: 770px 100px;
+}
+
+#header h1{
+	font-size:18px;
+	color:#fff;
+	margin-bottom:0;
+	padding-top: 10px;
+	padding-left:0;
+	text-align:center;
+}
+
+#nav ul {
+	width:660px;
+	margin-right:auto;
+	margin-left:auto;
+}
+#nav ul li a{
+	width:120px;
+	padding:10px 5px;
+	margin-right:auto;
+	margin-left:auto;
+}

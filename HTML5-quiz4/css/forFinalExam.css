@@ -1,0 +1,129 @@
+#mainContainer{
+	margin: auto;
+	background-color:#ccc;
+	width: 980px;
+	height: 840px;
+}
+#topHeader{
+	margin: auto;
+	background-color: black;
+	width: 960px;
+	height: 49px;
+}
+#mainArticle1{
+	border: 1px solid white;
+	background-color: white;
+	width: 455px;
+	height: 130px;
+	padding: 5px
+}
+#rightNav1{
+    position: absolute;
+	background-color: white;
+	border: 1px solid white;
+	width: 455px;
+	height: 130px;
+	padding: 5px
+}
+#body2Container{
+	display: inline;
+	width: 140px;
+}
+
+#mainArticle2{
+	border: 1px solid white;
+	width: 455px;
+	height: 280px;
+	margin-top: 10px;
+	padding: 5px
+}
+#rightNav2{
+    position: absolute;
+	border: 1px solid white;
+	width: 455px;
+	height: 280px;
+	margin-top:25px;
+	padding: 5px
+	background-color: white;
+}
+#body2Container{
+	display: inline;
+	background-color: white;
+	width: 960px;
+}
+
+div.relative {
+    position: relative;
+    top: 8px;
+    left: 10px;
+} 
+
+nav.absolute {
+    position: absolute;
+    top: 0;
+    left: 480px;
+}
+div.absolute {
+    position: absolute;
+    top: 13px;
+    left: 90px;
+}
+#divFooter1{
+	width: 570px;
+	border: 1px solid white;
+    margin: 20px 0 0 10px;
+	padding: 50px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a:hover {
+    background-color: red;
+}
+nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#img1{
+	width: 100px;
+}
+#prgrph{
+}
+#p1{
+	width: 210px;
+	font-weight: bold;
+	font-size: 21px;
+	margin-bottom: 7px;
+	margin-left: 120px;
+}
+#p2{
+	font-size: 14px;
+	margin-left: 120px;
+}
+
+h1{
+	background-color: black;
+	color: white;
+	font-family: Tahoma;
+	font-size: 200%;
+	margin: 10px 0 0 10px;
+}
+#smlIcon{
+	margin: 75px 0 5px -50px;
+	width: 350px;
+}
+#smlIcon1{
+	margin: 145px 0 5px -50px;
+	width: 350px;
+}

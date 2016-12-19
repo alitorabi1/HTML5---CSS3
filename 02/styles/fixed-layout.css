@@ -1,0 +1,72 @@
+@charset "utf-8";
+/*  CSS Document for the fixed layout web page
+	Developed by: Ali Torabi
+	Script Date: April 1, 2016
+*/
+
+body{
+	font-family: Arial, Helvatica, sans-serif;
+	font-size:12px;
+	background-color: #d3d3d3;
+}
+
+#container{
+	width: 930px;
+	border: 1px solid #000080;
+	margin: 0 auto;
+	height: 675px;
+}
+/* remember the order of selectors: width, margin, border, padding(TRBL) */
+
+/* styling the header id selector */
+#header{
+	width: 910px;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	background-color: #ff0;
+	height: 75px;
+}
+/* styling the nav id selector */
+#nav{
+	width: 910px;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	background-color: #c0c0c0;
+	height: 25px;
+}
+/* styling the leftSidebar id selector*/
+#leftSidebar{
+	width: 150px;
+	margin: 0 10px 10px 0;
+	padding: 5px;
+	background-color: #ffa500;
+	height: 400px;
+	float: left;
+}
+/* styling the main id selector */
+#main{
+	width: 580px;
+	margin: 0 10px 10px 0;
+	padding: 5px;
+	background-color: #00a5ff;
+	height: 400px;
+	float: left;
+}
+/* styling the rightSidebar id selector*/
+#rightSidebar{
+	width: 150px;
+	margin: 0 0 10px 0;
+	padding: 5px;
+	background-color: #00ff00;
+	height: 400px;
+	float: left;
+}
+/* styling the footer id selector */
+#footer{
+	width: 910px;
+	margin: 0 0 10px 0;
+	padding: 10px;
+	background-color: #f00000;
+	height: 75px;
+	clear: both;
+}

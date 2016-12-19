@@ -1,0 +1,103 @@
+body {
+	background-image: url('texture.jpg');
+	border-radius: 20px;
+}
+#dataTable td{
+	padding: 5px 10px;
+	text-align: left;
+}
+#dataTable {
+	margin: auto;
+	text-align: left;
+}
+.borderAll {
+	border: solid 2px black;
+}
+.borderLeft {
+	border-left: solid 2px black;
+	text-align: left;
+}
+h1 {
+	margin: 8px 0 25px 0;
+	font-weight: bold;
+	font-size: 200%;
+	text-align: center;
+}
+#contentContainer {
+	margin: auto;
+	margin-top: 20px;
+	padding: 16px;
+}
+#topContainer{
+	margin: auto;
+	width: 720px;
+}
+#topContainer ul {
+	margin-top: 10px;
+}
+#topContainer li a {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	margin-right: 20px;
+}
+#topContainer li {
+	display: inline;
+	background-color: #417c3b;
+	padding: 6px 10px;
+}
+#topContainer li:hover {
+	background-color: #274b23;
+	color: white;
+}
+#topContainer img {
+	margin: 0 0 10px 0;
+}
+#topContainer {
+	margin: auto;
+	padding: 20px;
+	background-color: #98e690;
+	width: 80%;
+}
+th {
+	font-weight: bold;
+	text-align: center;
+}
+#productTable {
+	margin: auto;
+	width: 600px;
+}
+#mainContainer {
+	border-radius: 20px;
+	background-color: #dcffc9;
+	width: 720px;
+	margin: auto;
+}
+.imageThumb {
+	display: inline-block;
+	background-color: blue;
+	padding: 20px;
+}
+#imageThumbContainer {
+	border: 2px solid black;
+	margin: auto;
+	width: 428px;
+	margin-top: 20px;
+}
+#dataColored{
+	background-color: green;
+}
+
+p{
+	font-size: 50%;
+    font-style: italic;
+	text-align: center;
+	padding: 20px;
+}
+#logo{
+	    float: left;
+}
+
+td{
+	text-align: left;
+}

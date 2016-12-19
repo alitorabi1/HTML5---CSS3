@@ -1,0 +1,56 @@
+@charser "utf-8";
+
+#container{
+    width:980px;
+    margin: 0 auto;
+    background-color:#b4c4ba;
+    /*
+	Because of the different devices, we have Responsive Design
+	The background image will be removed into the desktop: 
+	background-image:url("../images/nature.jpg");
+	*/
+    background-repeat:no-repeat;
+    border-left:1px solid #000080;
+    border-right:1px solid #000080;
+}
+
+body{
+	margin:0;
+	padding:0;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:#eefeef;
+	color:#000;
+}
+
+#nav ul{
+	list-style-type:none;
+	margin:0 auto 15px 35px;
+	padding:0;
+	font-size:17px;
+	height:35px;
+}
+#nav ul li{
+	float:left;
+	margin:0 1px;
+}
+#nav ul li a{
+	display:block;
+	width:160px;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	background-color:#003;
+	border-radius:8px;
+	box-shadow:2px 2px 3px #999;
+}
+#nav ul li a:hover{
+	color:#f00;
+	box-shadow:20px 20px 30px #999;
+	border-radius:18px;
+	font-size:20px;
+	font-weight:bold;
+}
+#nav ul li a:visited{
+	background-color:#030;
+}

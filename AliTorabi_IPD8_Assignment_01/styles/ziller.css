@@ -1,0 +1,134 @@
+@charset "utf-8";
+/*  CSS Document for the fixed layout web page
+	Developed by: Ali Torabi
+	Script Date: 3:45 PM 4/4/2016, 2016
+*/
+
+/* Styling the body selector */
+body{
+	font-family: "Times New Roman", Helvatica, sans-serif;
+	font-size:13px;
+	background-color: #d3d3d3;
+}
+
+/* Styling the header selector */
+header{
+	width: 770px;
+	margin: 0 0 0 0;
+	background-image: Url("../images/blacktexture.jpg");
+	height: 45px;
+	font-weight: bold;
+	color: #fff;
+	font-size: 2em;
+	text-align: center;
+}
+header p {
+	padding: 10px;
+}
+
+/* Styling the nav selector */
+nav{
+	line-height: 200%;
+	display: block;
+	width: 770px;
+	margin: 0 0 0 0;
+	background-color: #808080;
+	height: 25px;
+	word-spacing: 5px;
+	text-align: center;
+}
+nav ul li a {
+	color: #fff;
+	background-color: #000;
+}
+nav ul li {
+	list-style-type: none;
+	display: inline;
+}
+
+/* Styling the container id */
+#container{
+	width: 770px;
+	border: 1px solid #000080;
+	margin: 0 auto;
+	height: 656px;
+	background-color: #f3f6e9;
+}
+
+/* Styling the leftSidebar id selector */
+#leftSidebar{
+	width: 239px;
+	margin: 0 10px 0 5px;
+	padding: 5px;
+	height: 520px;
+	float: left;
+	border-right: 3px solid #008080;
+}
+
+/* styling the main id selector */
+#main{
+	width: 239px;
+	margin: 0 10px 0 0;
+	padding: 5px;
+	height: 520px;
+	float: left;
+	border-right: 3px solid #008080;
+}
+
+/* styling the rightSidebar id selector*/
+#rightSidebar{
+	width: 228px;
+	margin: 0 0 0 0;
+	padding: 5px;
+	height: 520px;
+	float: left;
+}
+
+/* styling the footer id selector */
+#footer{
+	font-family: Arial;
+	color: #fff;
+	width: 770px;
+	margin-bottom: 0;
+	background-color: #808080;
+	height: 20px;
+	clear: both;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* styling the navFooter id selector */
+#navFooter{
+	margin-top: -15px;
+}
+footer p {
+	padding: 5px;
+	font-size: 11px;
+}
+
+/* styling the p selector */
+p {
+    text-indent: 10px;
+	margin-top: 0;
+	line-height: 100%;
+}
+
+/* styling the h1 selector */
+h1{
+	text-align: center;
+	background-color: #000080;
+	color: #fff;
+	padding: 5px;
+}
+
+/* styling the h3 selector */
+h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* styling the image selector */
+img{
+	width: 175px;
+	float: left;
+}

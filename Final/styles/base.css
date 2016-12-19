@@ -1,0 +1,284 @@
+body{
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	background-color: #eaeaec;
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	width: 100%;
+	margin: auto;
+}
+
+#headerContainer{
+	position:fixed;
+	width: 100%;
+	height:103px;
+	background-color: #fff;
+}
+ul{
+	width: 95%;
+	height: 20px;	
+	text-align: right;
+}
+ul li {
+	color: #000;
+	list-style-type: none;
+	display: inline-block;
+}
+ul li a{
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;	
+}
+.lang a{
+	padding: 1px;
+
+}
+#topNav{
+	width: 95%;
+	text-align: right;
+	color: #000;
+	
+}
+#topNav a {
+	color: #000;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 10px;
+
+}
+
+#mainContainer{
+	font-size: 16px;
+	width: 100%;
+}
+
+h1{
+	padding:25px;
+	font-family:Arial;
+	font-style:italic;
+	font-weight:bold;
+	font-size:4em;
+	color:#9ac844;
+	margin-bottom:50px;
+	margin-left:190px;
+}
+
+#category1{
+	float:left;
+	margin: 224px 0 50px 210px;
+}
+#category2{
+	float:left;
+	margin: 210px 0 50px 50px;
+}
+#category3{
+	float:left;
+	margin: 114px 0 50px 210px;
+}
+#category4{
+	float:left;
+	margin: 100px 0 50px 50px;
+}
+#category1 a{
+	text-decoration:none;
+	color:#000;
+	font-size:0.9em;
+}
+#category2 a{
+	text-decoration:none;
+	color:#000;
+	font-size:0.9em;
+}
+#category3 a{
+	text-decoration:none;
+	color:#000;
+	font-size:0.9em;
+}
+#category4 a{
+	text-decoration:none;
+	color:#000;
+	font-size:0.9em;
+}
+
+#figcaption1{
+	margin-left:21%;
+}
+#figcaption2{
+	margin-left:24%;
+}
+#figcaption3{
+	margin-left:24%;
+}
+#figcaption4{
+	margin-left:24%;
+}
+
+#footer{
+	clear: both;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	background-color: #000;	
+	margin-top:670px;
+}
+#footerNav{
+	margin: 30px 0;
+	text-align: center;
+}
+#footerNav a{
+	color: #fff;
+	margin: 0 30px;
+	font-size: 15px;
+}
+#footer p{
+	color: #fff;
+}
+#paymentImages{
+	margin: 0 50px;
+}
+
+#linkNav{
+	margin: 10px;
+	text-align: center;
+}
+#linkNav a{
+	margin:20px;
+	text-align: center;
+}
+
+#linkNav img:hover{
+	transform: scale(1.5,1.5);
+}
+
+#logo{
+	float:left;
+	margin-top:0;
+}
+
+#language a{
+	color:#000;
+}
+
+#copyright{
+	text-align:center;
+	font-size:12px;
+}
+
+/****************************       Style of the login page     **********************/
+.form{
+	float: left;
+	text-align: center;
+	width: 40%;
+	margin:205px 5% 100px 5%;
+}
+
+.form input{
+	margin: 28px;
+	width: 80%;
+	height: 25px;
+}
+
+.form input:focus{
+	background-color: #ffffcc;
+}
+.form p {
+	font-size: 18px;
+	color: #e30013;
+}
+
+#submitButton, #createAccountButton{
+	width: 35%;
+	height: 35px;
+	margin: 30%;
+	margin-bottom:30px;
+	margin-top:30px;
+	font-weight: bolder;
+	color:#000;
+	border-radius: 5px;
+	background-color: #9ac844;
+	display: block;
+}
+#submitButton:hover, #createAccountButton:hover{
+/*	transform: scale(1.1,1.1);*/
+	background-color: #709f18;
+}
+
+/*********************          style of the product page          *****************/
+
+.productImage{
+	display: block;
+	float: left;
+	width:50%;
+	margin:200px auto 126px 130px;
+}
+.productImage img{
+	width: 90%;
+	margin: auto;
+}
+.productInfo{
+	display: block;
+	float: left;
+	width: 30%;
+	margin-left: 100px;
+}
+.productInfo p{
+	height: 200px;
+	width: 70%;
+	margin:auto;
+	font-size: 18px;
+
+}
+.productInfo table{
+	width: 70%;
+	margin:auto;
+	border-collapse: collapse;
+	border: 1px solid #000;
+}
+.productInfo table th{
+	background-color: #adebeb;
+	text-align: right;
+}
+.productInfo table tr{
+	height: 20px;
+	text-align: center;
+}
+.productInfo form{
+	width: 50%;
+	margin: auto;
+}
+.productInfo input{
+		float: right;
+		margin: 30px;
+		width: 100px;
+		height: 50px;
+		background-color: #00cccc;
+}
+
+#price td{
+	font-size: 30px;
+}
+
+/*********************           style category page          ***********************/
+figure{
+	width: 40%;
+	display: inline-block;
+}
+
+ul{
+	margin-top:0px;
+}
+#category-figcaption1{
+	margin-left:-30px;
+}
+#category-figcaption2{
+	margin-left:-30px;
+}
+#category-figcaption3{
+	margin-left:-30px;
+}
+#category-figcaption4{
+	margin-left:-30px;
+}
